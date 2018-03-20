@@ -1,0 +1,168 @@
+{
+  "city": {
+    "id": 5375480,
+    "name": "Mountain View",
+    "coord": {
+      "lon": -122.0833,
+      "lat": 37.3894
+    },
+    "country": "US",
+    "population": 74066
+  },
+  "cod": "200",
+  "message": 69.6166394,
+  "cnt": 7,
+  "list": [{
+    "dt": 1521489600,
+    "temp": {
+      "day": 12.99,
+      "min": 11.29,
+      "max": 12.99,
+      "night": 11.29,
+      "eve": 12.99,
+      "morn": 12.99
+    },
+    "pressure": 992.33,
+    "humidity": 85,
+    "weather": [{
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }],
+    "speed": 1.22,
+    "deg": 136,
+    "clouds": 92
+  }, {
+    "dt": 1521576000,
+    "temp": {
+      "day": 9.77,
+      "min": 8.84,
+      "max": 9.93,
+      "night": 8.84,
+      "eve": 9.24,
+      "morn": 9.93
+    },
+    "pressure": 990.44,
+    "humidity": 100,
+    "weather": [{
+      "id": 502,
+      "main": "Rain",
+      "description": "heavy intensity rain",
+      "icon": "10d"
+    }],
+    "speed": 1.86,
+    "deg": 139,
+    "clouds": 92,
+    "rain": 20.65
+  }, {
+    "dt": 1521662400,
+    "temp": {
+      "day": 14.43,
+      "min": 9.26,
+      "max": 14.72,
+      "night": 11.4,
+      "eve": 12.81,
+      "morn": 9.26
+    },
+    "pressure": 987.32,
+    "humidity": 95,
+    "weather": [{
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10d"
+    }],
+    "speed": 1.61,
+    "deg": 158,
+    "clouds": 92,
+    "rain": 3.66
+  }, {
+    "dt": 1521748800,
+    "temp": {
+      "day": 13.98,
+      "min": 9.66,
+      "max": 13.98,
+      "night": 9.66,
+      "eve": 12.85,
+      "morn": 12.78
+    },
+    "pressure": 1005.3,
+    "humidity": 0,
+    "weather": [{
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10d"
+    }],
+    "speed": 5.31,
+    "deg": 185,
+    "clouds": 43,
+    "rain": 7.3
+  }, {
+    "dt": 1521835200,
+    "temp": {
+      "day": 10.51,
+      "min": 6.77,
+      "max": 11.52,
+      "night": 7.06,
+      "eve": 11.52,
+      "morn": 6.77
+    },
+    "pressure": 1011.98,
+    "humidity": 0,
+    "weather": [{
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10d"
+    }],
+    "speed": 4.37,
+    "deg": 214,
+    "clouds": 38,
+    "rain": 10
+  }, {
+    "dt": 1521921600,
+    "temp": {
+      "day": 10.03,
+      "min": 5.89,
+      "max": 11.18,
+      "night": 7.33,
+      "eve": 11.18,
+      "morn": 5.89
+    },
+    "pressure": 1018.36,
+    "humidity": 0,
+    "weather": [{
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10d"
+    }],
+    "speed": 2.47,
+    "deg": 355,
+    "clouds": 11,
+    "rain": 1.36
+  }, {
+    "dt": 1522008000,
+    "temp": {
+      "day": 11.47,
+      "min": 5.89,
+      "max": 13.3,
+      "night": 9.8,
+      "eve": 13.3,
+      "morn": 5.89
+    },
+    "pressure": 1018.14,
+    "humidity": 0,
+    "weather": [{
+      "id": 800,
+      "main": "Clear",
+      "description": "sky is clear",
+      "icon": "01d"
+    }],
+    "speed": 4.25,
+    "deg": 335,
+    "clouds": 0
+  }]
+}

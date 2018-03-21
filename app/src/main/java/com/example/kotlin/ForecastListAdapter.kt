@@ -13,19 +13,22 @@ import com.squareup.picasso.Picasso
 import java.text.SimpleDateFormat
 import java.util.*
 
-class ForecastListAdapter(private val result: ForecastResult) : RecyclerView.Adapter<ForecastListAdapter.ViewHolder>() {
+class ForecastListAdapter(
+        private val result: ForecastResult,
+        private val click: (Forecast)->Unit
+): RecyclerView.Adapter<ForecastListAdapter.ViewHolder>() {
     override fun getItemCount(): Int = result.list.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.app_item_recycle_forecast, parent, false)
-        return ViewHolder(view)
+        return ViewHolder(view, click)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindForecast(result[position])
     }
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
+    class ViewHolder(view: View, val click:(Forecast)->Unit) : RecyclerView.ViewHolder(view){
         @BindView(R.id.icon) lateinit var icon:ImageView
         @BindView(R.id.date) lateinit var date:TextView
         @BindView(R.id.description) lateinit var description:TextView
@@ -43,6 +46,7 @@ class ForecastListAdapter(private val result: ForecastResult) : RecyclerView.Ada
                 maxTemperature.text = "${temp.max.toInt()}°"
                 minTemperature.text = "${temp.min.toInt()}°"
                 Picasso.with(itemView.context).load(getIconUrl()).into(icon)
+                itemView.setOnClickListener { click(this) }
             }
         }
     }

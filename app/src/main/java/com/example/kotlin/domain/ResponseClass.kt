@@ -1,7 +1,5 @@
 package com.example.kotlin.domain
 
-import java.util.*
-
 
 data class Coordination(
         val lon: Float,
@@ -43,12 +41,18 @@ data class Forecast(
         val clouds: Int
 )
 
+////拓展属性不是字段,因此没有backing field,不能有初始化器
+//val Forecast.description:String
+//        get() = weather[0].description
+
 data class ForecastResult(
         val city: City,
         val cod: String,
         val message: Float,
         val cnt: Int,
         val list: List<Forecast>
-)
+) {
+    operator fun get(i: Int): Forecast = list[i]
+}
 
 

@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import com.example.kotlin.net.ForecastRequest
 import org.jetbrains.anko.async
 import org.jetbrains.anko.find

@@ -39,7 +39,10 @@ data class Forecast(
         val speed: Float,
         val deg: Int,
         val clouds: Int
-)
+){
+    fun getDescription():String = weather[0].description
+    fun getIconUrl():String = "http://openweathermap.org/img/w/${weather[0].icon}.png"
+}
 
 ////拓展属性不是字段,因此没有backing field,不能有初始化器
 //val Forecast.description:String
